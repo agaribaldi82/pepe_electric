@@ -11,6 +11,13 @@
     margin: 0;
 }
 
+#body_residencial{
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
 @keyframes animacion {
     0%{background-image: url(imagenes/lampara_comercial.jpg);}
     50%{background-image: url(imagenes/mantenimiento.jpg);}
@@ -55,10 +62,11 @@ a:hover{
     position: relative;
 }
 
-#pepe_principal{
+.pepe_principal{
     margin: auto;
-    margin-top: 170px;
+    margin-top: 0px;
 }
+
 #pepelectric{
     background-color: rgba(36, 204, 238, 0.697);
     width: fit-content;
@@ -78,6 +86,17 @@ a:hover{
     margin-top: 0;
     margin: auto;
 }
+
+#pepe_2{
+    background-color: rgba(34, 37, 36, 0.87);
+    width: fit-content;
+    padding: 15px;
+    color: white;
+    font-size: 80px;
+    margin-top: 0;
+    margin: auto;
+}
+
 #menu_vertical{
     display: none;
     position: absolute;
@@ -127,13 +146,24 @@ a:hover{
     width: 100%;
     height: 150px;
     background-image: url(imagenes/atico.jpg);
+    transition: ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:unset;
     margin: 0;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-
+@keyframes animacion {
+    0%{background-image: url(imagenes/lampara_comercial.jpg);}
+    50%{background-image: url(imagenes/mantenimiento.jpg);}
+    100%{background-image: url(imagenes/residencial1.jpg);}
+}
 
 #telefono{
     background-color: rgba(126, 249, 208, 0.108);
@@ -158,7 +188,7 @@ a:hover{
     color: rgba(249, 248, 248, 0.976);
 }
 
-#iconos_contacto{
+.iconos_contacto{
     display: flex;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.79);
@@ -242,20 +272,20 @@ textarea{
     color: white;
     text-align: end;
 }
-#emergency{
+.emergency{
     background-color: rgba(36, 204, 238, 0.314);
     padding: 25px;
     padding-left: 150px;
     color: white;
     font-size: 40px;
 }
-#seccion_final{
+.seccion_final{
     background-image: url(imagenes/pared_foco.avif);
     background-position: center;
 }
 
-#seccion_final_index{
-    margin-top: 200px;
+.seccion_final_index{
+    margin-top: 50px;
     background-image: url(imagenes/pared_foco.avif);
     background-position: center;
 }
@@ -270,7 +300,7 @@ footer {
 
 #body_about{
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-image: url(imagenes/colores.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -284,26 +314,99 @@ footer {
     background-color: rgba(36, 204, 238, 0.697);
     text-align: end;
     padding-right: 100px;
+    height: 150px;
+    margin: 0;
 }
 #seccion_about{
-    background-image: url(imagenes/pared_lamparas.jpg);
+    background-color: beige;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:unset;
     margin: 0;
+    padding-bottom: 30px;
     height: 500px;
     margin-top: 200px;
+    padding-top: 50px;
 }
 #history{
     font-size: 30px;
-    background-color: rgba(0, 0, 0, 0.753);
     width: fit-content;
     padding: 15px;
-    color: white;
+    color: rgb(6, 6, 6);
+    margin-left: 100px;
+    background-color: rgba(0, 0, 0, 0.156);
 }
 
 #parrafo_about{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.688);
+    color: rgb(7, 7, 7);
     font-size: 20px;
+    margin-left: 100px;
+}
+
+#parrafo_residencial{
+    font-size: 24px;
+    color: rgb(5, 5, 5);
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#div_residencial{
+    background-image: url(imagenes/residencial1.jpg);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#div_reparacion{
+    background-image: url(imagenes/herramientas.webp);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#div_mantenimiento{
+    background-image: url(imagenes/mantenimiento.jpg);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#div_iluminacion{
+    background-image: url(imagenes/lampara_comercial.jpg);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#div_comercial{
+    background-image: url(imagenes/comercial_foto.jpg);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#seccion_emergency_index{
+    margin-top: 300px;
 }
