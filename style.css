@@ -103,8 +103,6 @@ a:hover{
     position: absolute;
     top: 90%;
     background-color: rgba(0, 0, 0, 0.72);
-
-
 }
 
 #lista li:hover #menu_vertical{
@@ -272,6 +270,8 @@ textarea{
     background-color: rgba(36, 204, 238, 0.697);
     color: white;
     text-align: end;
+    margin-bottom: 200px;
+    margin-top: 200px;
 }
 .emergency{
     background-color: rgba(36, 204, 238, 0.314);
@@ -324,10 +324,10 @@ footer {
     background-size: cover;
     background-position:unset;
     margin: 0;
-    padding-bottom: 30px;
-    height: 500px;
+    height: 700px;
     margin-top: 200px;
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 #history{
     font-size: 30px;
@@ -340,8 +340,9 @@ footer {
 
 #parrafo_about{
     color: rgb(7, 7, 7);
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 100px;
+    margin-bottom: 50px;
 }
 
 #parrafo_residencial{
@@ -409,7 +410,15 @@ button:hover{
 }
 
 #seccion_emergency_index{
-    margin-top: 300px;
+    margin-top: 100px;
+}
+
+#seccion_emergency_index2{
+    margin-top: 200px;
+}
+
+#seccion_emergency_index3{
+    margin-top: 0px;
 }
 
 .imagenes_boton{
@@ -452,6 +461,26 @@ figure {
     display: flex;
   }
 
-  #servicios_index{
-    margin-top: 200px;
-  }
+
+  #pepe_2{
+    opacity: 0; /* Inicialmente, el título es transparente */
+    top: 50%; /* Alinear desde el 50% de la parte superior */
+    transform: translateY(-50%); /* Centrar verticalmente */
+    left: -100px; /* Posición desde el borde izquierdo */
+    margin-top: 250px; /* Eliminar margen por defecto */
+    padding: 30px;
+    animation-name: slideIn;
+    animation-duration: 5s; /* Duración de la animación */
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+0% {
+    left: -100px; /* Posición inicial fuera del lateral */
+    opacity: 0; /* Título transparente */
+}
+100% {
+    left: 0; /* Posición final en el lateral */
+    opacity: 1; /* Título completamente visible */
+}
+}
