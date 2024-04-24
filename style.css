@@ -64,7 +64,6 @@ a:hover{
 
 .pepe_principal{
     margin: auto;
-    margin-top: 0px;
 }
 
 #pepelectric{
@@ -73,8 +72,9 @@ a:hover{
     padding: 15px;
     margin-bottom: 0;
     margin: auto;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
+    margin-top: 150px;
 }
 
 #pepe_1{
@@ -82,9 +82,10 @@ a:hover{
     width: fit-content;
     padding: 15px;
     color: white;
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 0;
     margin: auto;
+    
 }
 
 #pepe_2{
@@ -410,3 +411,47 @@ button:hover{
 #seccion_emergency_index{
     margin-top: 300px;
 }
+
+.imagenes_boton{
+    display: flex;
+    width: max-content;
+}
+
+figure {
+    margin-right: 0px; /* Margen entre cada imagen */
+    position: relative; /* Para posicionar el título con respecto a la imagen */
+    margin-left: 30px;
+  }
+  
+  figure img {
+    width: 200px; /* Tamaño fijo para todas las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0); /* Fondo semitransparente */
+    color: white;
+    padding: 5px;
+    margin: 0;
+
+  }
+  .link_fotos:hover{
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.42);
+  }
+  .fotitos{
+    width: 200px;
+    height: 150px;
+  }
+
+  .fila {
+    display: flex;
+  }
+
+  #servicios_index{
+    margin-top: 200px;
+  }
