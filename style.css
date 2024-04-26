@@ -484,3 +484,20 @@ figure {
     opacity: 1; /* Título completamente visible */
 }
 }
+
+@media screen and (max-width: 991px) {
+    #lista{
+        display: flex;
+        flex-direction: column;
+    }
+    #navegador{
+        display: flex;
+        flex-direction: column;
+    }
+    #body_index{
+        width: 50%;
+    }
+    #logo{
+        width: 500px;
+    }
+}

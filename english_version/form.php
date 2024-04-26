@@ -10,7 +10,7 @@ $mensaje .= "Enviado desde: $email \n";
 $mensaje .= "Telefono: $tel \n";
 $mensaje .= "Mensaje: $consulta \n";
 
-$para = "pepe@gmail.com";
+$para = "service@electricpepe.com";
 $asunto = "Email enviado desde la web";
 
 mail($para, $asunto, $mensaje);
