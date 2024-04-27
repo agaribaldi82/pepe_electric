@@ -1,11 +1,9 @@
-const menu_btn = document.getElementById('menu_hambuguesa');
-const menu = document.getElementById('lista')
+// Declaraciones
+const menuBtn = document.getElementById('menu_hamburguesa');
+const menuList = document.querySelector('.menus');
+// Funciones
 
-
-menu_btn.onclick = function() {
-    if (menu.style.display === 'none') {
-      menu.style.display = 'flex';
-    } else {
-      menu.style.display = 'none';
-    }
-  };
+menuBtn.addEventListener('click', e =>{
+    menus.classList.toggle
+})
+menuBtn.onclick = () => toggle(menuList);
