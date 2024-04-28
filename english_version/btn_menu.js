@@ -1,9 +1,6 @@
-// Declaraciones
-const menuBtn = document.getElementById('menu_hamburguesa');
-const menuList = document.querySelector('.menus');
-// Funciones
+const nav = document.querySelector("#lista_contenedor")
+const abrir = document.querySelector("#menu_hamburguesa")
 
-menuBtn.addEventListener('click', e =>{
-    menus.classList.toggle
+abrir.addEventListener("click", () => {
+    lista_contenedor.classList.add("visible")
 })
-menuBtn.onclick = () => toggle(menuList);

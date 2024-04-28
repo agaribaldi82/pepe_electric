@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="btn_menu.js" defer></script>
 </head>
 <body id="body_about">
     <section id="navegador">
         <div>
-            <a href="index.html"><img id="logo" src="imagenes/logot.png" alt=""></a>
+            <a href="#"><img id="logo" src="imagenes/logot.png" alt=""></a>
         </div>
-        <div id="lista_contenedor"> 
-            <ul id="lista">
-                <li><a href="index.html">Home</li></a>
+        <nav id="lista_contenedor" class="lista_contenedor"> 
+            <ul id="lista" class="nav_list">
+                <li><a href="index.html" class="active">Home</li></a>
                 <li><a href="">Services</a>
                     <ul id="menu_vertical">  
                         <li><a href="residencial.html">Residential</a></li>
@@ -26,8 +27,10 @@
                 <li><a href="about.html">About us</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
+        </nav>
+        <div>
+            <button id="menu_hamburguesa">&equiv;</button>
         </div>
-        <button id="menu_hamburguesa">&equiv;</button>
     </section>
     <div id="titulo_about">
         <h1>
@@ -87,7 +90,7 @@
                 </section>
 
         <div class="emergency" id="seccion_emergency_index3">
-            <h1 id="contacto_eme">24/7 emergency call: (203) 496 1206</h1>
+            <h1 id="contacto_eme">24/7 emergency call: <br>(203) 496 1206</h1>
         </div>
         <div id="iconos" class="iconos_contacto">
             <a class="botones_contacto" href="index.html" id="casa_contacto"><img width="48" height="48" src="https://img.icons8.com/fluency/48/home-page.png" alt="Volver al inicio"/></a>

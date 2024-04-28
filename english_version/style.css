@@ -53,7 +53,6 @@ a:hover{
     font-size: 23px;
     margin-right: 100px;
     color: rgb(20, 237, 201);
-    overflow: hidden;
 
 }
 #lista_contenedor{
@@ -485,13 +484,15 @@ figure {
   }
   #menu_hamburguesa{
     display: none;
-}
-#menu_hamburguesa{
     border-radius: .5rem;
     background-color: #49bd94;
 }
 
+
   @media screen and (max-width: 991px) {
+    #body_index{
+        width: 100vw;
+    }
     #body_contacto{
         width: 100vw;
     }
@@ -580,21 +581,58 @@ figure {
         width: 80vw;
     }
     #logo{
-        width: 150px;
-        margin-right: 70px;
+        width: 9.5rem;
+        margin-left: 0;
+        margin-right: 0;
     }
-    #lista{
-        display: none;
+
+    .lista_contenedor{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
         flex-direction: column;
-        width: auto;
-        gap: .5rem;
+        text-align: center;
+        margin: 0;
+        margin-top: 15px;
+        width: 50%;
     }
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        background-color: #030303c8;
+        text-align: center;
+        align-content: center;
+        margin: 0;
+        margin-top: 8rem;
+        padding: .5rem;
+        width: 85%;
+    }
+    #menu_vertical{
+        background-color: rgb(3, 3, 0);
+        top: 8rem;
+        padding-top: 2rem;
+        text-align: left;
+        padding: 1rem 1rem 0 1rem;
+   
+    }
+
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    #menu_hamburguesa{
+        display: flex;
+        text-align: center;
+        margin-left: 0;
+        }
     #navegador{
         display: flex;
         height: 7rem;
         margin: 0;
         top: 0;
-        justify-content: center;
+        right: 0;
+        width: 90vw;
+        padding-right: 10vw;
     }
     #body_index{
         width: 100vw;
@@ -633,7 +671,7 @@ figure {
     }
 
     .emergency{
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: white;
         text-align: left;
         padding-left: 0.5rem;
@@ -648,11 +686,10 @@ figure {
     figcaption{
         width: 100%;
     }
-    #menu_hamburguesa{
-    display: flex;
-    }
+
     footer{
         margin-top: 0;
         margin-bottom: 0;
     }
+
 }
