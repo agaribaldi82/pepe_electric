@@ -32,8 +32,9 @@
     
 }
 #logo{
-    width: 180px;
-    margin-left: 75px;
+    width: 11.25rem;
+    margin-left: 4.7rem;
+    margin-right: 25rem;
 }
 
 a{
@@ -44,6 +45,7 @@ a{
 
 a:hover{
     background-color: rgba(3, 107, 242, 0.297);
+    border-radius: 2rem;
 }
 
 #lista{
@@ -51,7 +53,6 @@ a:hover{
     display: flex;
     gap: 15px;
     font-size: 23px;
-    margin-right: 100px;
     color: rgb(20, 237, 201);
 
 }
@@ -117,6 +118,7 @@ a:hover{
     display: none;
     position: absolute;
     top: 90%;
+    padding-top: 2rem;
     background-color: rgba(0, 0, 0, 0.72);
 
 
@@ -487,6 +489,9 @@ figure {
     border-radius: .5rem;
     background-color: #49bd94;
 }
+#cerrar{
+    display: flex;
+}
 
 
   @media screen and (max-width: 991px) {
@@ -495,6 +500,7 @@ figure {
     }
     #body_contacto{
         width: 100vw;
+        margin: 0;
     }
     #contacto_div{
         width: 100vw;
@@ -513,16 +519,15 @@ figure {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        padding-bottom: 870px;
-
+        padding-bottom: 54.4rem;
     }
     #formulario{
-        width: 68%;
-        margin-left: 15px;
+        width: 71%;
+        margin-left: 1rem;
     }
     #area_cobertura{
-        width: 95%;
-        margin-left: 15px;
+        width: 90%;
+        margin-left: 1rem;
     }
     #contacto_global{
         background-image: url(imagenes/pared_foco.avif);
@@ -574,14 +579,14 @@ figure {
     #pepelectric{
         margin-top: 2.5rem;
         width: 60vw;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
     }
     #pepe_1{
         width: 80vw;
     }
     #logo{
-        width: 9.5rem;
+        width: 9.2rem;
         margin-left: 0;
         margin-right: 0;
     }
@@ -605,8 +610,9 @@ figure {
         margin: 0;
         margin-top: 8rem;
         padding: .5rem;
-        width: 85%;
+        width: 95%;
     }
+
     #menu_vertical{
         background-color: rgb(3, 3, 0);
         top: 8rem;
