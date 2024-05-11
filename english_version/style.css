@@ -51,16 +51,16 @@ li a:hover{
     border-radius: 2rem;
 }
 
+.botones_contacto:hover{
+    transform: rotate(45deg) scale(1.5);
+}
+
 #lista{
     list-style: none;
     display: flex;
     gap: 15px;
     font-size: 23px;
     color: rgb(20, 237, 201);
-
-}
-#navegador{
-
 
 }
 
@@ -124,8 +124,6 @@ li a:hover{
     padding: 1rem 0 1rem 0;
     background-color: rgba(0, 0, 0, 0.72);
     border-radius: .5rem;
-
-
 }
 
 #lista li:hover #menu_vertical{
@@ -608,7 +606,8 @@ figure {
 
     }
     #pepe_1{
-        width: 80vw;
+        width: 90%;
+        font-size: 5rem;
     }
     #logo{
         width: 8rem;
@@ -645,8 +644,7 @@ figure {
         padding-top: 2rem;
         text-align: left;
         padding: 1rem 1rem 0 1rem;
-        margin-top: 12rem;
-        left: 0;
+        margin-top: 0rem;
    
     }
 
@@ -705,13 +703,13 @@ figure {
     }
 
     .emergency{
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
         text-align: left;
         padding-left: 0.5rem;
-        max-width:98.2vw;
+        width: 98%;
         background-color: rgba(0, 0, 0, 0.44);
-        text-shadow: 1 1 .25rem #333
+        text-shadow: 0rem .7rem .25rem #0c0c0c;
     }
 
     .fotitos{
@@ -725,8 +723,6 @@ figure {
         margin-top: 0;
         margin-bottom: 0;
     }
-    #eme24{
-        font-size: 90%;
-    }
+
 
 }
