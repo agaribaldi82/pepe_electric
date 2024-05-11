@@ -29,7 +29,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
 }
 #logo{
     width: 11.25rem;
@@ -43,7 +46,7 @@ a{
     padding: 15px;
 }
 
-a:hover{
+li a:hover{
     background-color: rgba(3, 107, 242, 0.297);
     border-radius: 2rem;
 }
@@ -56,9 +59,9 @@ a:hover{
     color: rgb(20, 237, 201);
 
 }
-#lista_contenedor{
-    justify-content: flex-end;
-    position: relative;
+#navegador{
+
+
 }
 
 .pepe_principal{
@@ -117,9 +120,10 @@ a:hover{
 #menu_vertical{
     display: none;
     position: absolute;
-    top: 90%;
-    padding-top: 2rem;
+    top: 70%;
+    padding: 1rem 0 1rem 0;
     background-color: rgba(0, 0, 0, 0.72);
+    border-radius: .5rem;
 
 
 }
@@ -131,11 +135,10 @@ a:hover{
     margin-bottom: 15px;
 }
 #lista_contenedor #menu_vertical li {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 #seccion_contacto{
     display: flex;
-    margin-top: 250px;
     background-image: url(imagenes/pared_foco.avif);
     padding-top: 100px;
     margin-top: 0;
@@ -298,7 +301,7 @@ textarea{
     background-color: rgba(36, 204, 238, 0.314);
     text-align: center;
     color: white;
-    font-size: 2.3rem;
+    font-size: 2rem;
     width: 100vw;
     padding-top: 2rem;
     padding: 2rem 0 2rem 0;
@@ -308,7 +311,15 @@ textarea{
     background-size: cover;
 }
 
-
+#eme24{
+    background-color: #0a0a0a83;
+    width: fit-content;
+    padding: 3rem;
+    margin: auto;
+    border-radius: .5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 .seccion_final{
     background-image: url(imagenes/pared_foco.avif);
     background-position: center;
@@ -344,8 +355,15 @@ footer {
     padding-top: 50px;
     font-size: 60px;
     color: white;
-    text-align: end;
+    text-align: start;
     padding-right: 100px;
+    padding-left: 10rem;
+}
+#about_titulo{
+    background-color: #49bd94a6;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: .5rem;
 }
 #seccion_about{
     margin-top: 70px;
@@ -489,12 +507,19 @@ figure {
     border-radius: .5rem;
     background-color: #49bd94;
 }
-#cerrar{
-    display: flex;
+
+#contacto_titulo{
+    background-color: #333333b4;
+    border-radius: .5rem;
+    width: fit-content;
+    padding: 1rem;
 }
 
-
   @media screen and (max-width: 991px) {
+    #about_titulo{
+        font-size: 100%;
+        margin-left: 2rem;
+    }
     #body_index{
         width: 100vw;
     }
@@ -586,20 +611,20 @@ figure {
         width: 80vw;
     }
     #logo{
-        width: 9.2rem;
+        width: 8rem;
         margin-left: 0;
         margin-right: 0;
+        left: 0;
     }
 
-    .lista_contenedor{
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
-        margin-top: 15px;
-        width: 50%;
+    #lista{
+        display: none;
+
+    }
+
+    #lista_contenedor{
+        margin-top: 7rem;
+
     }
     .nav_list{
         display: flex;
@@ -608,9 +633,10 @@ figure {
         text-align: center;
         align-content: center;
         margin: 0;
-        margin-top: 8rem;
+        margin-top: 10rem;
         padding: .5rem;
-        width: 95%;
+        width: 110%;
+
     }
 
     #menu_vertical{
@@ -619,24 +645,26 @@ figure {
         padding-top: 2rem;
         text-align: left;
         padding: 1rem 1rem 0 1rem;
+        margin-top: 12rem;
+        left: 0;
    
     }
 
-    .visible{
-        opacity: 1;
-        visibility: visible;
-    }
     #menu_hamburguesa{
         display: flex;
         text-align: center;
-        margin-left: 0;
-        }
+        margin-left: 2rem;
+    }
+    #lista.active {
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+    }
     #navegador{
         display: flex;
         height: 7rem;
         margin: 0;
         top: 0;
-        right: 0;
         width: 90vw;
         padding-right: 10vw;
     }
@@ -696,6 +724,9 @@ figure {
     footer{
         margin-top: 0;
         margin-bottom: 0;
+    }
+    #eme24{
+        font-size: 90%;
     }
 
 }

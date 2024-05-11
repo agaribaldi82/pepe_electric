@@ -1,11 +1,12 @@
-const nav = document.querySelector("#lista_contenedor")
-const abrir = document.querySelector("#menu_hamburguesa")
-const cerrar = document.querySelector("cerrar")
+document.addEventListener("DOMContentLoaded", function() {
+    const menu_btn = document.getElementById("menu_hamburguesa");
+    const menu_list = document.getElementById("lista");
 
-abrir.addEventListener("click", () => {
-    lista_contenedor.classList.add("visible")
-})
+    menu_btn.addEventListener("click", function() {
+        toggle(menu_list, "active");
+    });
 
-cerrar.addEventListener("click", () => {
-    lista_contendor.classList.add("hide")
-})
+    function toggle(element, className = "active") {
+        element.classList.toggle(className);
+    }
+});
