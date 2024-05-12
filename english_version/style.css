@@ -52,7 +52,7 @@ li a:hover{
 }
 
 .botones_contacto:hover{
-    transform: rotate(45deg) scale(1.5);
+    transform: rotate(5deg) scale(1.5);
 }
 
 #lista{
@@ -72,6 +72,7 @@ li a:hover{
     background-image: url(imagenes/residencial1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     animation-name: animacion;
     animation-duration: 5s;
     animation-delay: 3s;
@@ -108,13 +109,16 @@ li a:hover{
 }
 
 #pepe_2{
-    background-color: rgba(34, 37, 36, 0.87);
+    background-color: rgba(25, 131, 95, 0.493);
     width: fit-content;
     padding: 15px;
     color: white;
     font-size: 80px;
     margin-top: 0;
     margin: auto;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-shadow: 0rem .6rem .25rem #0c0c0c;;
 }
 
 #menu_vertical{
@@ -280,6 +284,7 @@ textarea{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:unset;
+    background-attachment: fixed;
     margin: 0;
     animation-name: animacion;
     animation-duration: 5s;
@@ -307,6 +312,7 @@ textarea{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-shadow: 0rem .7rem .25rem #0c0c0c;
 }
 
 #eme24{
@@ -347,6 +353,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     margin: 0;
     padding-bottom: 30px;
     height: 450px;
@@ -394,6 +401,7 @@ footer {
 
 #div_residencial{
     background-image: url(imagenes/residencial1.jpg);
+    background-attachment: fixed;
     width: 100%;
     height: 500px;
     display: flex;
@@ -404,6 +412,7 @@ footer {
 
 #div_reparacion{
     background-image: url(imagenes/herramientas.webp);
+    background-attachment: fixed;
     width: 100%;
     height: 500px;
     display: flex;
@@ -414,6 +423,7 @@ footer {
 
 #div_mantenimiento{
     background-image: url(imagenes/mantenimiento.jpg);
+    background-attachment: fixed;
     width: 100%;
     height: 500px;
     display: flex;
@@ -424,6 +434,7 @@ footer {
 
 #div_iluminacion{
     background-image: url(imagenes/lampara_comercial.jpg);
+    background-attachment: fixed;
     width: 100%;
     height: 500px;
     display: flex;
@@ -481,10 +492,11 @@ figure {
     bottom: 0;
     left: 0;
     width: 15vw;
-    background-color: rgb(0, 0, 0); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.795); /* Fondo semitransparente */
     color: white;
     padding: 0.3rem;
     margin: 0;
+    font-size: 1.2rem;
 
   }
   .link_fotos:hover{
@@ -499,6 +511,12 @@ figure {
   .fila {
     display: flex;
     width: 100vw;
+  }
+
+  .fila a:hover{
+    background-color: #0c0c0c00;
+    transform: scale(1.2);
+    opacity: .5;
   }
   #menu_hamburguesa{
     display: none;
@@ -622,8 +640,7 @@ figure {
     }
 
     #lista_contenedor{
-        margin-top: 7rem;
-
+        margin-top: 3rem;
     }
     .nav_list{
         display: flex;
@@ -631,21 +648,23 @@ figure {
         background-color: #030303c8;
         text-align: center;
         align-content: center;
-        margin: 0;
-        margin-top: 10rem;
+        margin-top: 13.5rem;
         padding: .5rem;
+        padding-bottom: 1rem;
         width: 110%;
-
+        border-radius: 0 0 .5rem .5rem;
+        position: relative;
+        left: 4.1rem;
     }
 
     #menu_vertical{
         background-color: rgb(3, 3, 0);
-        top: 8rem;
+        top: 0rem;
         padding-top: 2rem;
         text-align: left;
         padding: 1rem 1rem 0 1rem;
         margin-top: 0rem;
-   
+        border-radius: 0.5rem;
     }
 
     #menu_hamburguesa{
