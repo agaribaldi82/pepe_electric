@@ -95,9 +95,18 @@ li a:hover{
     font-size: 2.5rem;
     color: white;
     margin-top: 4rem;
-}
 
+    }
+@keyframes rotateTwice {
+    from {
+      transform: rotate(0deg); /* Rotación inicial de 0 grados */
+    }
+    to {
+      transform: rotate(360deg); /* Rotación final de 720 grados (2 vueltas) */
+    }
+  }
 #pepe_1{
+    position: relative;
     background-color: rgba(6, 6, 6, 0.702);
     width: fit-content;
     padding: 1rem;
@@ -105,10 +114,21 @@ li a:hover{
     font-size: 6rem;
     margin-top: 0;
     margin: auto;
-    
+    animation: fromRight 1.5s ease;
+    transform-origin: center;
 }
 
+
+@keyframes fromRight{
+    from{
+        right: -100%;}
+    to{
+        right: 0;
+    }
+    }
+
 #pepe_2{
+    position: relative;
     background-color: rgba(25, 131, 95, 0.493);
     width: fit-content;
     padding: 15px;
@@ -118,8 +138,16 @@ li a:hover{
     margin: auto;
     border-radius: .5rem;
     padding: 2rem;
-    text-shadow: 0rem .6rem .25rem #0c0c0c;;
-}
+    text-shadow: 0rem .6rem .25rem #0c0c0c;
+    animation: fromLeft 1.5s ease;
+    }
+@keyframes fromLeft{
+    from {
+        left: -100%;}
+    to{
+        left:0
+    }
+    }
 
 #menu_vertical{
     display: none;
@@ -207,7 +235,7 @@ li a:hover{
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.79);
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #formulario{
@@ -313,7 +341,8 @@ textarea{
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 0rem .7rem .25rem #0c0c0c;
-}
+    }
+
 
 #eme24{
     background-color: #0a0a0a83;
@@ -323,7 +352,22 @@ textarea{
     border-radius: .5rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    position: relative;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+@keyframes animacion{
+    from{
+        background-color: #0a0a0a83;
+    }
+    to{
+        background-color: rgba(36, 204, 238, 0.697);
+    }
+}
+
 .seccion_final{
     background-image: url(imagenes/pared_foco.avif);
     background-position: center;
@@ -336,8 +380,8 @@ textarea{
     background-position: center;
 }
 footer {
-    background-color: rgba(0, 8, 9, 0.648);
-    color: rgb(254, 252, 252);
+    background-color: rgba(17, 9, 7, 0.648);
+    color: rgb(184, 162, 138);
     text-align: center;
     padding: 0.5em 0 0.5rem 0;
     margin-top: 0;
@@ -521,15 +565,27 @@ figure {
   #menu_hamburguesa{
     display: none;
     border-radius: .5rem;
-    background-color: #49bd94;
+    background-color: rgb(73, 189, 148);
 }
 
-#contacto_titulo{
-    background-color: #333333b4;
+#contacto_titulo, #about_titulo, #pepelectric{
+    position: relative;
+    background-color: rgba(73, 189, 148, 0.712);
     border-radius: .5rem;
     width: fit-content;
     padding: 1rem;
+    margin: auto;
+    margin-top: 5rem;
+    animation: fromLeft 1.5s ease;
 }
+@keyframes fromLeft{
+    from{
+        left: -100%;}
+    to{
+        left: 0;
+    }
+    }
+
 
   @media screen and (max-width: 991px) {
     #about_titulo{
@@ -741,7 +797,7 @@ figure {
     footer{
         margin-top: 0;
         margin-bottom: 0;
+        font-size: 4vw;
     }
-
 
 }
