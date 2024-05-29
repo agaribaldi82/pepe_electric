@@ -8,81 +8,90 @@
     <script src="btn_menu.js" defer></script>
 </head>
 <body id="body_index">
-    <header>
-        <section id="navegador">
-            <div>
-                <a href="#"><img id="logo" src="imagenes/logot.png" alt=""></a>
-            </div>
-            <nav id="lista_contenedor" class="lista_contenedor"> 
-                <ul id="lista" class="nav_list">
-                    <li><a href="index.html" class="active">Home</li></a>
-                    <li><a href="">Services</a>
-                        <ul id="menu_vertical">  
-                            <li><a href="residencial.html">Residential</a></li>
-                            <li><a href="comercial.html">Commercial</a></li>
-                            <li><a href="iluminacion.html">Lighting</a></li>
-                            <li><a href="reparacion.html">Repairs</a></li>
-                            <li><a href="mantenimiento.html">Upgrades</a></li>
-                        </ul>
-                    
-                    </li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
+    <nav id="navegador">
+        <a href="#"><img id="logo" src="imagenes/logot.png" alt=""></a>
+        <button id="menu_hamburguesa" onclick="menu()">&equiv;</button>
+        <ul id="lista" class="nav_list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="">Services</a>
+                <ul id="menu_vertical">  
+                    <li><a href="residencial.html">Residential</a></li>
+                    <li><a href="comercial.html">Commercial</a></li>
+                    <li><a href="iluminacion.html">Lighting</a></li>
+                    <li><a href="reparacion.html">Repairs</a></li>
+                    <li><a href="mantenimiento.html">Upgrades</a></li>
                 </ul>
-            </nav>
-            <div>
-                <button id="menu_hamburguesa">&equiv;</button>
-            </div>
-        </section>
+            </li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><p onclick=close()>Cerrar</p></li>
+        </ul>
+    </nav>
+    <header id="pepe_principal">
+        <h1 id="pepelectric">PEPE ELECTRIC LLC</h1>
+        <p id="pepe_1">Always your best option</p>
     </header>
-    <section id="pepe_principal">
-        <h3 id="pepelectric">PEPE ELECTRIC LLC</h3>
-        <h1 id="pepe_1">Always your best option</h1>
-    </section>
-    <section class="seccion_final_index" id="seccion_emergency_index2">
-
-        <div class="fila">
-            <a href="residencial.html" class="link_fotos"><figure>
-                <img class="fotitos" src="imagenes/residencial1.jpg" alt="">
+    <main class="seccion_final_index" id="seccion_emergency_index2">
+        <section class="fila">
+            <figure>
+                <a href="residencial.html" class="link_fotos">
+                    <img class="fotitos" src="imagenes/residencial1.jpg" alt="residencial">
+                </a>
                 <figcaption>Residential Electrical</figcaption>
-            </figure></a>
-            <a href="comercial.html" class="link_fotos"><figure>
-                <img class="fotitos" src="imagenes/comercial_foto.jpg" alt="">
+            </figure>
+            <figure>
+                <a href="comercial.html" class="link_fotos">
+                    <img class="fotitos" src="imagenes/comercial_foto.jpg" alt="comercial">
+                </a>
                 <figcaption>Commercial Electrical</figcaption>
-            </figure></a>
-            <a href="iluminacion.html" class="link_fotos"><figure>
-                <img class="fotitos" src="imagenes/lampara_comercial.jpg" alt="">
+            </figure>
+            <figure>
+                <a href="iluminacion.html" class="link_fotos">
+                    <img class="fotitos" src="imagenes/lampara_comercial.jpg" alt="lampara_comercial">
+                </a>
                 <figcaption>Lighting</figcaption>
-            </figure></a>
-            <a href="reparacion.html" class="link_fotos"><figure>
-                <img class="fotitos" src="imagenes/herramientas.webp" alt="">
+            </figure>
+            <figure>
+                <a href="reparacion.html" class="link_fotos">
+                    <img class="fotitos" src="imagenes/herramientas.webp" alt="herramientas">
+                </a>
                 <figcaption>Repairs</figcaption>
-            </figure></a>
-            <a href="mantenimiento.html" class="link_fotos"><figure>
-                    <img class="fotitos" src="imagenes/mantenimiento.jpg" alt="">
-                    <figcaption>Upgrades</figcaption>
-            </figure></a>
-                        <!-- Agrega más imágenes aquí si es necesario -->
-        </div>
+            </figure>
+            <figure>
+                <a href="mantenimiento.html" class="link_fotos">
+                    <img class="fotitos" src="imagenes/mantenimiento.jpg" alt="mantenimiento">
+                </a>
+                <figcaption>Upgrades</figcaption>
+            </figure>
+            <!-- Agrega más imágenes aquí si es necesario -->
+        </section>
         <div class="emergency">
-            <h1 id="eme24">24/7 emergency call: <br>(203) 496 1206</h1>
+            <p id="eme24">24/7 emergency call: <br>(203) 496 1206</p>
         </div>
-        <div id="iconos" class="iconos_contacto">
-            <a class="botones_contacto" href="index.html" id="casa_contacto"><img width="48" height="48" src="https://img.icons8.com/fluency/48/home-page.png" alt="Volver al inicio"/></a>
-            <a class="botones_contacto" href="https://wa.me/+12034961206" target="_blank"><img src="imagenes/whatsapp1.png" alt=""></a>
-            <a class="botones_contacto" href="mailto:service@electricpepe.com" target="_blank"><img src="imagenes/email.png" alt=""></a>
-            <a class="botones_contacto" href="https://www.instagram.com/pepe.electric/" target="_blank"><img src="imagenes/insta_color.png" alt=""></a>
-            <a class="botones_contacto" href="https://www.facebook.com" target="_blank"><img src="imagenes/boton_facebook.png" width="38px" alt=""></a>
-            <a class="botones_contacto" href="tel:+12034961206" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/apple-phone.png" alt="apple-phone"/></a>
-        </div>
-    </section>
-    <section id="footer">
-        <footer>
-            <span>
-                &copy; 2024 Pepe Electric LLC. Stamford, CT - USA | All rights reserved. 
-            </span>
-        </footer>
-    </section>  
+        <section id="iconos" class="iconos_contacto">
+            <a class="botones_contacto" href="index.html" id="casa_contacto">
+                <img src="https://img.icons8.com/fluency/48/home-page.png" alt="Volver al inicio"/>
+            </a>
+            <a class="botones_contacto" href="https://wa.me/+12034961206" target="_blank">
+                <img src="imagenes/whatsapp1.png" alt="whatsapp">
+            </a>
+            <a class="botones_contacto" href="mailto:service@electricpepe.com" target="_blank">
+                <img src="imagenes/email.png" alt="email">
+            </a>
+            <a class="botones_contacto" href="https://www.instagram.com/pepe.electric/" target="_blank">
+                <img src="imagenes/insta_color.png" alt="instagram">
+            </a>
+            <a class="botones_contacto" href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/boton_facebook.png" alt="facebook">
+            </a>
+            <a class="botones_contacto" href="tel:+12034961206" target="_blank">
+                <img src="https://img.icons8.com/color/48/apple-phone.png" alt="apple-phone"/>
+            </a>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 Pepe Electric LLC. Stamford, CT - USA | All rights reserved.</p>
+    </footer>  
 </body>
 </html>
 
