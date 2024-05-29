@@ -16,11 +16,6 @@
     margin: 0;
 }
 
-@keyframes animacion {
-    0%{background-image: url(imagenes/lampara_comercial.jpg);}
-    50%{background-image: url(imagenes/mantenimiento.jpg);}
-    100%{background-image: url(imagenes/residencial1.jpg);}
-}
 
 #navegador{
     width: 100vw;
@@ -73,9 +68,9 @@ li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    animation-name: animacion;
+    animation-name: animacion1;
     animation-duration: 5s;
-    animation-delay: 3s;
+    animation-delay: 1.2s;
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -85,8 +80,15 @@ li a:hover{
     padding-bottom: 11rem;
     margin-bottom: 0;
 }
+@keyframes animacion1 {
+    0%{background-image: url(imagenes/lampara_comercial.jpg);}
+    50%{background-image: url(imagenes/mantenimiento.jpg);}
+    100%{background-image: url(imagenes/residencial1.jpg);}
+}
+
 
 #pepelectric{
+    position: relative;
     background-color: rgba(36, 204, 238, 0.697);
     width: 30.5vw;
     padding: 1.5rem;
@@ -95,16 +97,9 @@ li a:hover{
     font-size: 2.5rem;
     color: white;
     margin-top: 4rem;
+    text-shadow: 0 .3rem .1rem black;
+}
 
-    }
-@keyframes rotateTwice {
-    from {
-      transform: rotate(0deg); /* Rotación inicial de 0 grados */
-    }
-    to {
-      transform: rotate(360deg); /* Rotación final de 720 grados (2 vueltas) */
-    }
-  }
 #pepe_1{
     position: relative;
     background-color: rgba(6, 6, 6, 0.702);
@@ -116,6 +111,7 @@ li a:hover{
     margin: auto;
     animation: fromRight 1.5s ease;
     transform-origin: center;
+    text-shadow: 0 1rem .25rem black;
 }
 
 
@@ -139,8 +135,13 @@ li a:hover{
     border-radius: .5rem;
     padding: 2rem;
     text-shadow: 0rem .6rem .25rem #0c0c0c;
-    animation: fromLeft 1.5s ease;
+    
     }
+    
+#pepe_2, #pepelectric{
+    animation: fromLeft 1.5s ease;
+}
+
 @keyframes fromLeft{
     from {
         left: -100%;}
@@ -343,7 +344,6 @@ textarea{
     text-shadow: 0rem .7rem .25rem #0c0c0c;
     }
 
-
 #eme24{
     background-color: #0a0a0a83;
     width: fit-content;
@@ -354,10 +354,11 @@ textarea{
     margin-bottom: 5rem;
     position: relative;
     animation-name: animacion;
-    animation-duration: 5s;
+    animation-duration: .6s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function:ease;
+    box-shadow: .5rem .7rem .7rem hsla(100, 0%, 0%, 1);
 }
 @keyframes animacion{
     from{
@@ -380,8 +381,8 @@ textarea{
     background-position: center;
 }
 footer {
-    background-color: rgba(17, 9, 7, 0.648);
-    color: rgb(184, 162, 138);
+    background-color: rgb(26, 6, 2);
+    color: rgb(195, 202, 209);
     text-align: center;
     padding: 0.5em 0 0.5rem 0;
     margin-top: 0;
@@ -535,7 +536,7 @@ figure {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 15vw;
+    width: 15vmax;
     background-color: rgba(0, 0, 0, 0.795); /* Fondo semitransparente */
     color: white;
     padding: 0.3rem;
@@ -568,7 +569,8 @@ figure {
     background-color: rgb(73, 189, 148);
 }
 
-#contacto_titulo, #about_titulo, #pepelectric{
+
+#contacto_titulo, #about_titulo{
     position: relative;
     background-color: rgba(73, 189, 148, 0.712);
     border-radius: .5rem;
@@ -577,6 +579,7 @@ figure {
     margin: auto;
     margin-top: 5rem;
     animation: fromLeft 1.5s ease;
+    text-shadow: 0 1rem .25rem black;
 }
 @keyframes fromLeft{
     from{
@@ -587,7 +590,7 @@ figure {
     }
 
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 768px) {
     #about_titulo{
         font-size: 100%;
         margin-left: 2rem;
@@ -619,11 +622,11 @@ figure {
         padding-bottom: 54.4rem;
     }
     #formulario{
-        width: 71%;
+        width: 67%;
         margin-left: 1rem;
     }
     #area_cobertura{
-        width: 90%;
+        width: 93%;
         margin-left: 1rem;
     }
     #contacto_global{
@@ -633,7 +636,10 @@ figure {
         background-position: center;
     }
     #how{
-        width: 96%;
+        background-image: url(imagenes/electicista_telefono.jpg);
+        background-position: center;
+        background-size:80vmax;
+        width: 96%,;
         font-size: 40px;
         text-align: left;
         padding-left: 15px;
@@ -791,7 +797,7 @@ figure {
         width: 100%;
     }
     figcaption{
-        width: 100%;
+        width: 39vmax;
     }
 
     footer{
@@ -799,5 +805,231 @@ figure {
         margin-bottom: 0;
         font-size: 4vw;
     }
+    .cuadro_final{
+        width: 20rem;
+    }
+  }
 
-}
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    #about_titulo{
+        font-size: 100%;
+        margin-left: 2rem;
+    }
+    #body_index{
+        width: 100vw;
+    }
+    #body_contacto{
+        width: 100vw;
+        margin: 0;
+    }
+    #contacto_div{
+        width: 100vw;
+    }
+    #body_contacto #navegador{
+        width: 100vw;
+    }
+    #contacto_div{
+        width: 80vw;
+        margin-left: 15px;
+        padding-bottom: 35px;
+    }
+    #seccion_contacto{
+        width: 100%;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 54.4rem;
+    }
+    #formulario{
+        width: 71%;
+        margin-left: 1rem;
+    }
+    #area_cobertura{
+        width: 90%;
+        margin-left: 1rem;
+    }
+    #contacto_global{
+        background-image: url(imagenes/pared_foco.avif);
+        background-size: contain;
+        background-repeat:repeat-y;
+        background-position: center;
+    }
+    #how{
+        width: 96%;
+        font-size: 40px;
+        text-align: left;
+        padding-left: 15px;
+        margin-bottom: 0;
+    }
+    #titulo_about{
+        font-size: 50px;
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        background-color: rgba(36, 204, 238, 0.697);
+        margin-bottom: 70px;
+    }
+    #seccion_about{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        text-align: left;
+    }
+
+    #body_about{
+        width: 100%;
+    }
+
+    #historia{
+        margin-bottom: 50px;
+    }
+
+    #pepe_2{
+        width: 80%;
+        font-size: 45px;
+    }
+    #parrafo_residencial{
+        width: fit-content;
+        margin-left: 10px;
+        margin: 10px; 
+        text-align: left;
+    }
+    #pepelectric{
+        margin-top: 2.5rem;
+        width: 60vw;
+        font-size: 1.2rem;
+
+    }
+    #pepe_1{
+        width: 90%;
+        font-size: 5rem;
+    }
+    #logo{
+        width: 8rem;
+        margin-left: 0;
+        margin-right: 0;
+        left: 0;
+    }
+
+    #lista{
+        display: none;
+        margin-left: 0;
+    }
+
+    #lista_contenedor{
+        margin-top: 3rem;
+    }
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        background-color: #030303c8;
+        text-align: center;
+        align-content: center;
+        margin-top: 13.5rem;
+        padding: .5rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        border-radius: 0 0 .5rem .5rem;
+        position: relative;
+
+    }
+
+    #menu_vertical{
+        background-color: rgb(3, 3, 0);
+        top: 0rem;
+        padding-top: 2rem;
+        text-align: left;
+        padding: 1rem 1rem 0 1rem;
+        margin-top: 0rem;
+        border-radius: 0.5rem;
+    }
+
+    #menu_hamburguesa{
+        display: flex;
+        text-align: center;
+        margin-left: 2rem;
+    }
+    #lista.active {
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+    }
+    #navegador{
+        display: flex;
+        height: 7rem;
+        margin: 0;
+        top: 0;
+        width: 90vw;
+        padding-right: 10vw;
+    }
+    #body_index{
+        width: 100vw;
+        background-size: contain;
+        margin: 0px;
+
+    }
+
+    .fila{
+        display: flex;
+        flex-direction: column;
+    }
+    .iconos_contacto{
+        display: flex;
+        padding-left: .7rem;
+        align-content:center;
+        width: 97.5vw;
+    }
+    .botones_contacto{
+        width: 50vw;
+        margin: 0;
+        display: flex;
+        align-items:center ;
+        padding: 0;
+        margin: 0;
+    }
+    #seccion_emergency_index2{
+        margin-top: 0px;
+        padding:1.5rem 0 1.5rem 0;
+    }
+    #history{
+        text-align: left;
+        padding-left: 10px;
+        margin-left: 0px;
+        width: 95%;
+    }
+
+    .emergency{
+        font-size: 1rem;
+        color: white;
+        text-align: left;
+        padding-left: 0.5rem;
+        width: 98%;
+        background-color: rgba(0, 0, 0, 0.44);
+        text-shadow: 0rem .7rem .25rem #0c0c0c;
+    }
+
+    .fotitos{
+        width: 100%;
+    }
+
+    footer{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2vw;
+    }
+    .fotitos{
+        width: 20rem;
+        height: auto;
+
+    }
+    .fila{
+        text-align: center;
+    }
+    figcaption{
+        width: 37vmax;
+        margin: auto;
+        position: relative;
+    }
+  }
